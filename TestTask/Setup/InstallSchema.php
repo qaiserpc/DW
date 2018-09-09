@@ -36,30 +36,30 @@ class InstallSchema implements InstallSchemaInterface
                 ]
             )
             ->addColumn(
-                'factor',
+                'decimal_factor',
                 Table::TYPE_DECIMAL,
                 '12,4',
                 [
                     'default' => 0,
-                    'comment' => 'Factor'
+                    'comment' => 'Decimal factor'
                 ]
             )
             ->addColumn(
-                'order_sum',
+                'total_order_amount',
                 Table::TYPE_DECIMAL,
                 '12,4',
                 [
                     'default' => 0,
-                    'comment' => 'Order Sum'
+                    'comment' => 'total Order amount'
                 ]
             )
             ->addColumn(
-                'order_sum_multi',
+                'order_amount_with_decimal',
                 Table::TYPE_DECIMAL,
                 '12,4',
                 [
                     'default' => 0,
-                    'comment' => 'Order Sum Multiplied'
+                    'comment' => 'Order Sum Multiplied with decimal factor'
                 ]
             )
             ->addColumn(

@@ -54,9 +54,9 @@ class Register implements \Magento\Framework\Event\ObserverInterface
         $logResourceModel = $this->logResourceFactory->create();
         $data = [
             'order_id'        => $order->getIncrementId(),
-            'factor'          => $this->testHelper->getFactor(),
-            'order_sum'       => $order->getGrandTotal(),
-            'order_sum_multi' => ($order->getGrandTotal() * $this->testHelper->getFactor()),
+            'decimal_factor'          => $this->testHelper->getFactor(),
+            'total_order_amount'       => $order->getGrandTotal(),
+            'order_amount_with_decimal' => ($order->getGrandTotal() * $this->testHelper->getFactor()),
         ];
         try {
             $logModel->setData($data);
