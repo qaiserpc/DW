@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DW_TestTask::log_listing"
+             title="DW Log Listing"
+             module="DW_TestTask"
+             sortOrder="500"
+             resource="DW_TestTask::log_listing"
+             parent="Magento_Backend::system_tools"
+             action="dw_testtask/log/index"
+        />
+    </menu>
+</config>
